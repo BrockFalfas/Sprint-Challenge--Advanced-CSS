@@ -187,6 +187,61 @@ p {
   text-decoration: none;
   cursor: pointer;
 }
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+.contact-form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media (max-width: 500px) {
+  .col-25,
+  .col-75,
+  input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
 footer {
   color: #81848E;
   background: #f4f4f4;
@@ -201,6 +256,9 @@ footer {
   margin: 0 auto;
   left: 0px;
   right: 0px;
+}
+.contact-form {
+  padding-bottom: 75px;
 }
 .html {
   font-size: 62.5%;
@@ -279,7 +337,7 @@ footer {
 .home .walk {
   margin-top: 60px;
   border-top: 1px solid #dee2e6;
-  padding: 50px 60px 150px 0;
+  padding: 50px 60px 50px 0;
   display: flex;
   justify-content: center;
 }
@@ -342,6 +400,9 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.home .walk .take-flight {
+  padding: 10px;
 }
 .tile--css_animations__demo1 {
   background-color: #111111;
