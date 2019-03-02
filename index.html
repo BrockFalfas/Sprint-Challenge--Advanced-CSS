@@ -5,7 +5,7 @@
   <meta charset="utf-8">
 
   <title>SpaceWalkers</title>
-
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +20,12 @@
  <!-- navigation code here -->
   <div class="container home">
     <header class="headerSW">
-      <h1 class="spacewalkers">SpaceWalkers</h1>
+      <div class="tile--css_animations__demo1">
+    <div>
+        <p id="status">S<span>PACE</span>WALKERS</p>
+        <p id="message">WE<span>LC</span><span>O</span>ME!</p>
+    </div>
+</div>
 
       <nav class="nav-bar">
         <a class="nav-font" href="#">Home</a>
@@ -33,7 +38,9 @@
 
       <section class="intro">
         <!-- image code here -->
-        <img src="img/main-header.png" alt="Space Clouds">
+        <div class="w3-container w3-center w3-animate-zoom">
+            <img class="opacityadd" src="img/main-header.png" alt="clouds" style="width:100%">
+          </div>
 
         <h2>Lift Off</h2>
       
@@ -41,9 +48,9 @@
       </section>
 
     <section class="space-images">
-        <img src="img/blast.png" class="blast" alt="Rocket blasting off">
-        <img src="img/sky.png" class="sky" alt="Space sky image">
-        <img src="img/launch.png" class="launch" alt="Launching rocket">
+        <img class="w3-animate-fading" src="img/blast.png" class="blast" alt="Rocket blasting off">
+        <img class="w3-animate-fading" src="img/sky.png" class="sky" alt="Space sky image">
+        <img class="w3-animate-fading" src="img/launch.png" class="launch" alt="Launching rocket">
     </section>
    
     <section class="visit-planets">
@@ -69,13 +76,13 @@
       </div>
       
       <div class="walk-img">
-          <img src="img/space-walk.png" alt="Space walking astronaut">
+          <img class="w3-animate-fading" src="img/space-walk.png" alt="Space walking astronaut">
       </div>
 
     </section>
 
     <footer>
-      <p>Copyright SpaceWalkers 2018</p>
+      <p class="copyright">Copyright SpaceWalkers 2018</p>
     </footer>
 
   </div>
