@@ -5,10 +5,11 @@
   <meta charset="utf-8">
 
   <title>SpaceWalkers</title>
-
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
@@ -17,21 +18,39 @@
 <body>
 
  <!-- navigation code here -->
-
   <div class="container home">
+    <header class="headerSW">
+      <div class="tile--css_animations__demo1">
+    <div>
+        <p id="status">S<span>PACE</span>WALKERS</p>
+        <p id="message">WE<span>LC</span><span>O</span>ME!</p>
+    </div>
+</div>
 
-    <header class="intro">
-       <!-- image code here -->
-
-      <h2>Lift Off</h2>
-    
-      <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would fall apart. Seeing this has to change a man.</p>
+      <nav class="nav-bar">
+        <a class="nav-font" href="#">Home</a>
+        <a class="nav-font" href="#">About Us</a>
+        <a class="nav-font" href="#">Blog</a>
+        <a class="nav-font" href="#">Contact</a>
+        <a class="nav-font" href="#">Sign In</a>
+      </nav>
     </header>
 
+      <section class="intro">
+        <!-- image code here -->
+        <div class="w3-container w3-center w3-animate-zoom">
+            <img class="opacityadd" src="img/main-header.png" alt="clouds" style="width:100%">
+          </div>
+
+        <h2>Lift Off</h2>
+      
+        <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would fall apart. Seeing this has to change a man.</p>
+      </section>
+
     <section class="space-images">
-        <img src="img/blast.png" class="blast" alt="Rocket blasting off">
-        <img src="img/sky.png" class="sky" alt="Space sky image">
-        <img src="img/launch.png" class="launch" alt="Launching rocket">
+        <img class="w3-animate-fading" src="img/blast.png" class="blast" alt="Rocket blasting off">
+        <img class="w3-animate-fading" src="img/sky.png" class="sky" alt="Space sky image">
+        <img class="w3-animate-fading" src="img/launch.png" class="launch" alt="Launching rocket">
     </section>
    
     <section class="visit-planets">
@@ -57,13 +76,65 @@
       </div>
       
       <div class="walk-img">
-          <img src="img/space-walk.png" alt="Space walking astronaut">
+          <img class="w3-animate-fading" src="img/space-walk.png" alt="Space walking astronaut">
       </div>
-
     </section>
 
+      <section class="contact-form">
+        <div class="take-flight">
+          <h2>Take Flight</h2>
+        </div>
+          <p class="form-paragraph">Please fill out the form below with your first name, last name & planet for your destination.
+            If you could also please leave any additional details in the comment box to help us make a conclusion if you are fit
+            to go to space!
+          </p>
+        <form action="/action_page.php">
+          <div class="row">
+            <div class="col-25">
+              <label for="fname">First Name</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">Last Name</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="country">Planet</label>
+            </div>
+            <div class="col-75">
+              <select id="country" name="country">
+                <option value="australia">SATURN</option>
+                <option value="canada">MARS</option>
+                <option value="usa">VENUS</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="subject">Subject</label>
+            </div>
+            <div class="col-75">
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+      </section>
+
+
+
     <footer>
-      <p>Copyright SpaceWalkers 2018</p>
+      <p class="copyright">Copyright SpaceWalkers 2018</p>
     </footer>
 
   </div>
